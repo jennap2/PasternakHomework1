@@ -1,0 +1,31 @@
+</html>
+<style>
+        .button{
+                color: grey;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.3s;
+                cursor: pointer;
+        }
+        .button:hover{
+                background-color: #008CBA;
+                color: white;
+        }
+</style>
+<head>
+	<h1 style="color:B19CD9; text-align:center">Read</h1>
+</head>
+<body>
+	<!--Form to collect user info-->
+	<p>Submit the Id of the person who's name and points you would like to see</p>
+	<form action="{{ url_for("read")}}" method="post">
+	<label for="Id">Id:</label>
+	<input type="text" id="Id" name="Id" placeholder="Id">
+	<button type="submit">Submit</button>
+	<p><br></p>
+	<!--Return to home page button-->
+	<input type="button" class="button" value="Home Page" onclick="window.location.href='/'">
+</body>
+</html>
